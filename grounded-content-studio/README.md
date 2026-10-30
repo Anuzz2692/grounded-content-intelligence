@@ -324,6 +324,18 @@ Model calls are mocked, so the tests need no keys or network. `tests/test_demo.p
 - The rate limiter is in-memory and per process.
 
 ---
+## Development Workflow
+
+This project uses Git and GitHub to manage development and track changes.
+
+### Contribution Process
+
+1. Create a feature branch from `main`.
+2. Make a focused and meaningful change.
+3. Commit your changes with a descriptive commit message.
+4. Open a Pull Request for review.
+5. Merge the changes into the main branch after verification.
+
 
 ## 🤝 Contributing
 
