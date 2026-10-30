@@ -1,0 +1,26 @@
+# Format Module: Video and Video Script
+Version: 1.0
+
+Use this module for Reels, Shorts, educational videos and other video content. The LENGTH line sets the duration: concise is about 30 seconds (roughly 75 spoken words), standard about 60 seconds (roughly 150 words), detailed about 90-120 seconds (roughly 225-300 words). If the request states a duration or platform, follow it.
+
+## Strategy
+Follow: hook, key insight, explanation, takeaway, CTA. For short-form video the hook must work in about the first three seconds: a relevant question, a relatable customer concern, a misconception or a useful insight. No misleading clickbait, fear, shame, sensational claims or guaranteed-result language. Every spoken line must serve a purpose; remove filler, repetition, long introductions and excess jargon. Use natural spoken language.
+
+Platform: adapt to the platform named in the request (audience expectations, duration, pacing, spoken language, caption length, cover text, discoverability, CTA, hashtags). If none is named, use a broadly suitable social video format and do not claim it is optimised for one platform.
+
+## Fields
+Fill every field. The schema requires all of them.
+- title: the main video title, 5-9 words. It is the title of the first item in title_hook_options.
+- summary: one sentence saying what the video covers.
+- hook: the opening line of the first item in title_hook_options, exactly as it is spoken in the first three seconds.
+- scenes: the whole video as scenes (at least two), in order. Scene 1 is the hook and the last scene delivers the CTA both spoken and on screen. Each scene has: time (a range such as "0:00-0:05"), visual (what is on screen), voiceover (the exact spoken words) and on_screen_text (the short text overlay, or an empty string). The voiceover lines read together are the complete spoken script and fit the duration.
+- title_hook_options: exactly 3 items, each with a title (5-9 words) and a hook (the first spoken line). They take different angles, for example a question, a misconception and a relatable concern. Item 1 matches title and hook above.
+- caption: the caption posted with the video, 30-60 words. Add context and a useful point, do not repeat the script word for word, and end with the CTA when appropriate.
+- tags: exactly 15 relevant metadata tags (no # symbol).
+- hashtags: exactly 15 relevant hashtags, each starting with #.
+- closing_line: the closing spoken line of the video.
+- cta: the single primary CTA, the same one used in the last scene, or null if none is supported.
+- reviewer_notes: see the core prompt.
+
+## Accuracy and imagery
+Never invent statistics, success rates, offers (such as a free trial), customer stories, quotes or trending claims. Never write dialogue for a real person or present a fictional testimonial as real. Do not portray a result as guaranteed. Visual directions use generic or illustrative imagery; do not describe real facilities, staff or customers unless the excerpts support them, and mark an illustrative scenario as illustrative. Keep explanations proportionate to the evidence. Prefer understanding and accuracy over virality.

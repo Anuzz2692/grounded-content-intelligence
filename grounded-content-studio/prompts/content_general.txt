@@ -1,0 +1,8 @@
+# Format Module: General Content
+Version: 1.0
+
+Use this module when no other format fits. Match the scope, audience and length in the request. The LENGTH line sets the size: concise 300-450 words, standard 700-900 words, detailed 1,200-1,600 words.
+
+- Use a clear title and summary, an introduction, organised sections with useful headings, a conclusion, and a CTA when one is appropriate.
+- Apply every evidence and brand rule in the core prompt.
+- Do not impose website-page word counts, FAQ or People Also Ask sections, or social media metadata on a request that did not ask for them.

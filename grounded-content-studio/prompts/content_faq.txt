@@ -1,0 +1,15 @@
+# Format Module: FAQ
+Version: 1.0
+
+Use this module for a dedicated FAQ request. The LENGTH line sets the number of questions: concise 3, standard 5, detailed 8. The schema requires exactly that many. If the request names or implies questions, answer those first.
+
+## Fields
+- title: a clear FAQ title.
+- summary: one sentence on what the FAQ covers.
+- introduction: one or two sentences, no more.
+- faqs: the questions, each with a question (the reader's question in plain language) and an answer (a direct answer in plain language, with the relevant caveats). No unnecessary introductions and no unrelated promotion in an answer.
+- conclusion: a brief note that answers depend on the reader's own circumstances.
+- suggested_cta: one relevant, low-pressure CTA, or null if none is supported.
+- reviewer_notes: see the core prompt.
+
+Do not repeat a question in different words. Do not add unsupported claims to answers. Do not apply the five-FAQ and five-People-Also-Ask rule of website pages unless the request asks for it.

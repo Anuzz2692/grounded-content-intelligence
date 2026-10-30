@@ -1,0 +1,21 @@
+{
+  "name": "Example Co",
+  "website_url": "https://example.com/",
+  "audience": "customers",
+  "subject": "the company",
+  "brand_check_label": "Brand and audience sensitivity",
+  "tagline": "Write content you can trust",
+  "placeholder": "e.g. Explain how our home battery backup works and who it suits",
+  "examples": [
+    "Explain how a home battery backup works and who it suits",
+    "What to expect at a first site visit",
+    "A beginner's guide to choosing a solar installation",
+    "Answer common questions about warranties"
+  ],
+  "restricted_terms": [
+    {"label": "Acme Pro", "pattern": "(?<!\\w)Acme[\\s\\-_]+Pro(?!\\w)"}
+  ],
+  "risky_terms": [
+    {"label": "fastest", "pattern": "\\b(?:fastest|cheapest|most efficient)\\b"}
+  ]
+}

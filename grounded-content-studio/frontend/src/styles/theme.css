@@ -1,0 +1,68 @@
+/*
+  THEME: the only file you need to edit to re-brand the app.
+
+  These values are PLACEHOLDERS (a calm teal and warm coral), chosen without access to the
+  the company's real brand assets. Replace --brand*, --accent and the fonts with the official ones.
+*/
+:root {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --brand: #1f6f6b;
+  --brand-strong: #17534f;
+  --brand-soft: #e3f1ef;
+  --brand-contrast: #ffffff;
+  --accent: #c8553d;
+  --accent-soft: #fbe9e4;
+
+  --bg: #faf7f4;
+  --surface: #ffffff;
+  --surface-2: #f3eeea;
+  --border: #e4dcd5;
+  --text: #2a2623;
+  --text-muted: #6b625b;
+
+  --good: #2f7d4f;
+  --good-soft: #e2f3e8;
+  --warn: #946200;
+  --warn-soft: #fdf1d4;
+  --danger: #b23a2e;
+  --danger-soft: #fbe3df;
+  --neutral: #5b6470;
+  --neutral-soft: #eceef1;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow: 0 1px 2px rgb(40 30 20 / 6%), 0 8px 24px rgb(40 30 20 / 6%);
+  --focus: 0 0 0 3px rgb(31 111 107 / 35%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --brand: #5cc2ba;
+    --brand-strong: #8fd9d2;
+    --brand-soft: #173533;
+    --brand-contrast: #0c1f1e;
+    --accent: #f08a73;
+    --accent-soft: #3a211b;
+
+    --bg: #16130f;
+    --surface: #1f1b17;
+    --surface-2: #2a2520;
+    --border: #3a342d;
+    --text: #f2ece6;
+    --text-muted: #b2a89e;
+
+    --good: #6ccf93;
+    --good-soft: #17301f;
+    --warn: #f0c35a;
+    --warn-soft: #33290f;
+    --danger: #ff8f80;
+    --danger-soft: #3b1a16;
+    --neutral: #aab3bf;
+    --neutral-soft: #272b31;
+
+    --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px rgb(0 0 0 / 30%);
+    --focus: 0 0 0 3px rgb(92 194 186 / 40%);
+  }
+}

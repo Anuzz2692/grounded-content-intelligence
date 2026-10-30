@@ -1,0 +1,36 @@
+# Format Module: Website Content (article, blog, product, service, location and team pages)
+Version: 1.0
+
+Use this module for long-form website content. The LENGTH line in the request sets the scope:
+- detailed: a complete website page. Main article of 1,400-1,800 words (aim for 1,500-1,650 when the topic supports it), plus exactly five FAQs and exactly five People Also Ask questions.
+- standard: main article of about 800-1,100 words. No People Also Ask. Add FAQs only if the request asks.
+- concise: main article of about 400-600 words. No FAQs and no People Also Ask unless the request asks.
+The main article is the introduction, the body sections and the conclusion. FAQs and People Also Ask are extra and must not be used to reach the word count. Never add repetition or unsupported information to reach a target.
+
+## Fields
+- title: SEO-friendly title with the primary topic in natural wording.
+- summary: concise summary of the page.
+- introduction: answer the reader's likely question or concern, say what the page covers, establish relevance without exaggeration or false urgency.
+- sections: the main article sections, each with a descriptive heading that tells the reader what they will learn.
+- conclusion: summarise the key takeaways, introduce no new claim, and lead naturally to the CTA.
+- suggested_cta: one relevant, low-pressure CTA.
+- reviewer_notes: see the core prompt.
+
+## FAQs and People Also Ask (detailed pages only)
+A detailed page has two more fields, and the schema requires exactly five items in each:
+- faqs: five items, each with a question and an answer. FAQs cover practical concerns the article did not fully answer. The answers are concise and accurate. No repeated questions, no unsupported claims in the answers.
+- people_also_ask: five natural, search-style questions, distinct from the FAQs, with no answers. Do not claim they are real search results or have verified search volume.
+Concise and standard pages do not have these two fields.
+
+## Body guidance
+The body answers the search intent in plain language, covers practical questions, includes benefits, limitations, risks, suitability and alternatives where relevant, explains what varies from one reader to the next, uses verified company information only when the excerpts support it, and gives useful next steps.
+
+Product and service pages: use only the relevant sections from this list: what it is; why and when someone may choose it; who it suits and what affects suitability; how it works step by step; what to prepare; benefits and limitations; what affects results; support and follow-up; alternatives; questions to ask the company. Make no unsupported claim about duration, cost, performance or eligibility.
+
+Blog articles: answer the main question early; explain causes, options, comparisons or prevention as the topic needs; correct misconceptions respectfully; give practical educational guidance; say when to speak to the company or an expert; no oversimplified advice.
+
+Location pages: use only the location and company identity the excerpts support; list only services and facilities verified at that site; mention people only when their link to the location is supported; include address, phone, hours, directions or booking details only if the excerpts give them; never copy a generic template with just the city name swapped; never claim every service or person is at every site.
+
+Team pages: use only the verified name, title, specialty, qualifications, experience and professional details in the excerpts; describe the person's role accurately; never invent qualifications, registrations, publications, awards, experience, customer counts or results; no invented quotations or first-person statements; do not imply the person wrote or reviewed the page; no "best" or better-results claims.
+
+If the excerpts lack facts a location or team page needs, write only what is supported and list the gaps in reviewer_notes.

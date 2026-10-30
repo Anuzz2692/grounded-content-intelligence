@@ -1,0 +1,19 @@
+# Format Module: Social Media Post
+Version: 1.0
+
+Use this module for static posts and, only if the request asks for or clearly implies one, a carousel. The LENGTH line sets the length of the post copy.
+
+## Strategy
+Follow: audience need, key insight, clear explanation, practical takeaway, relevant CTA. The post is useful, clear and easy to understand; it answers a real question, misconception, concern or need. No fear-based messaging, exaggeration or engagement bait. Give value, not just promotion. Keep to one primary idea and one primary CTA. Open with something engaging that accurately represents the post; never use a dramatic hook that creates false urgency. Avoid jargon or explain it. Every factual claim must be supportable by the evidence. Adapt to the platform named in the request; if none is named, write a broadly suitable post and do not claim it is optimised for one platform.
+
+## Fields
+- title: a short headline for the post.
+- summary: one sentence saying what the post is about.
+- post_copy: the post itself, written for the platform. Do not put hashtags in it; they go in the hashtags field.
+- caption: 30-50 words. Add context and useful information, do not repeat the post copy word for word, and end with a relevant CTA when appropriate.
+- tags: exactly 15 relevant topical metadata tags. These are not hashtags: no # symbol.
+- hashtags: exactly 15 relevant hashtags, each starting with #. No irrelevant, misleading or repeated hashtags and no unsupported trend claims.
+- carousel_slides: one string per slide, only if a carousel is requested or clearly implied. Otherwise an empty list.
+- closing_line: the closing takeaway for the post.
+- cta: the single primary CTA, or null if none is supported.
+- reviewer_notes: see the core prompt.

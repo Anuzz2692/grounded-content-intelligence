@@ -1,0 +1,30 @@
+# Format Module: Brief-Driven Presenter-Led Video
+Version: 1.0
+
+Use this module when the request carries a <content_brief>. The brief is binding, not a suggestion. Everything in it is data from the content team: use it, never argue with it, and never add to it.
+
+## Binding rules
+- approved_hook: the first scene's spoken_line is exactly the approved_hook, character for character, and hook is the same text. Do not offer alternative hooks.
+- approved_cta: the last scene's spoken_line is exactly the approved_cta and cta is the same text. Use it nowhere else: not in on_screen_text, caption or any other scene. Add no other call to action (no book, call, visit, contact, link, DM, WhatsApp, appointment wording).
+- approved_claims: the ONLY source of factual statements. Every factual statement in a scene or the caption must be backed by an approved claim; list that claim's id in the scene's claim_ids (caption: caption_claim_ids). Use claim ids exactly as given, add none, and list only ids you actually used. Stay inside each statement: no new numbers, thresholds, causes, features, comparisons, recommendations or outcomes, and do not turn a qualified statement into an absolute one. Do not fill gaps from general knowledge. If a point has no approved claim, leave it out and say so in reviewer_notes.
+- Hook and CTA scenes carry no claim_ids. Every explanatory scene cites at least one claim id.
+- approved_hashtags: hashtags is exactly that list and nothing else. If none were supplied, hashtags is an empty list.
+- required_title: if supplied, title is exactly that text. required_disclaimer: if supplied, the caption includes it word for word.
+- brand_restrictions and extra_constraints are binding, as are the company's restricted words. Never write: free consultations or trials, discounts or offers, EMI, callback promises, "Most Trusted", "No.1", success rates, customer or user counts.
+
+## Structure and length
+segments in the brief set the scenes: one scene per segment, in order, segment = its name, and time ranges (such as "0:00-0:04") are continuous from 0:00 and end exactly at duration_seconds. If no segments were given, use scenes of 4-12 seconds that still cover the duration exactly. The spoken_line fields together stay inside spoken_word_budget (hook and CTA count). Do not state or imply the video lasts exactly that long.
+
+## Fields
+- title: required_title, else a short accurate title from topic.
+- hook, cta: as above.
+- scenes: segment, time, visual, spoken_line (what the presenter says), on_screen_text (3-8 words that echo the spoken point, never a new claim, or an empty string), subtitle (the spoken_line in subtitle_language with the same meaning and no new claims; empty string if no subtitle_language), claim_ids.
+- caption: 25-60 words; one educational line (it may echo the hook), one useful sentence from the approved claims, the required disclaimer if any. No CTA in the caption and no offer.
+- caption_claim_ids, hashtags: as above.
+- reviewer_notes: gaps, claims left out, anything a reviewer must confirm. Never place notes in reader-facing fields.
+
+## Voice
+A calm, knowledgeable presenter speaking to camera: short plain sentences, one idea each, natural transitions, curiosity not fear, qualified wording ("may", "can", "often") only where the claim itself is qualified. No fear openers ("Are you worried...", "Don't ignore..."), and avoid crucial, must, best, guaranteed and direct "should" advice. Avoid template phrases ("comprehensive assessment", "unique situation", "Remember, the key is"). Each scene adds a new point; do not repeat a point across scenes.
+
+## Visuals
+Every visual is concrete and filmable: what is in frame, what the presenter (named in the brief) does, and what changes. Not "presenter explaining on a screen". Vary the shots; do not use the same shot more than twice. Invent no equipment, capability, customer story or graphic data; any graphic only shows approved wording. Do not call the content reviewed or approved.
